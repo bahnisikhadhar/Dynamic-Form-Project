@@ -12,7 +12,7 @@ userInput.addEventListener("submit", (event) => {
 inputSubmit.addEventListener("click",(event)=>
 {
     const error=document.querySelector(".error");
-
+    // error.innerText="";
     const inputName=document.querySelector("#input_name");
     const inputMail=document.querySelector("#input_mail");
     const inputPhone=document.querySelector("#input_phone");
@@ -23,7 +23,9 @@ inputSubmit.addEventListener("click",(event)=>
         error.innerText="Empty input field (s)";
         error.className="error_text";
         
-         // inputName.addEventListener("focus",(event)=>
+    //-----------------------------on focus at the input boxes error msg should disappear--------------------
+
+        // inputName.addEventListener("focus",(event)=>
         // {
         //         error.innerText="";
         // });
