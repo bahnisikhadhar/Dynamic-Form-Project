@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:rgb(67, 153, 104);
+}
+body {
+    width: 100%;
+}
+.user_input, .container_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.input_outline{
+    background-color:var(--bg-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.input_text {
+    width: 26rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+#add_btn {
+    padding: 1.1rem 1.2rem;
+    background-color: var(--bg-color);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#add_btn:hover{
+    background-color: rgb(36, 180, 36);
+}
+#add_btn:active{
+    background-color: green;
+}
+h3 {
+   width: 28rem; 
+   background-color:var(--bg-color);
+   padding: 1rem;
+   text-align: center;
+   border-radius: 5px;
+}
+.action {
+    padding: .7rem 2rem;
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/***************************************javascript's css****************************************************/
+.error_text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(154, 6, 6);
+    animation: blink 1s linear infinite;
+    
+  }
+
+  @keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    
+  }
+  .row_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: .5rem;
+    }
+    
+  .output_detail {
+    background-color: #ccc;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 28rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button_remove {
+  padding: 1rem 1.7rem;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
